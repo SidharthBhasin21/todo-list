@@ -10,7 +10,7 @@ const App = () => {
     return JSON.parse(localValue);
   });
   useEffect(() => {
-    localStorage.setItem("Item", JSON.stringify(todos));
+    localStorage.setItem("ITEMS", JSON.stringify(todos));
   }, [todos]);
 
   const toggleTodo = (id, completed) => {
